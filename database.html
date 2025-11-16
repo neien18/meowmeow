@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DN SEA Guides Database</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header / Title -->
+  <header>
+    <h1>Dragon Nest SEA Guides Database</h1>
+  </header>
+
+  <!-- Database Section -->
+  <section class="database">
+    <div class="db-container">
+      
+      <!-- LEFT SIDE: Search + List -->
+      <div class="db-left">
+        <input type="text" id="searchBox" placeholder="Search guides..." onkeyup="filterGuides()">
+        <ul id="guideList"></ul>
+      </div>
+      
+      <!-- CENTER: Result -->
+      <div class="db-center">
+        <h3 id="guideTitle">Select a guide</h3>
+        <p id="guideContent">Results will appear here...</p>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="guides/data.js"></script>
+  <script src="js/db.js"></script>
+</body>
+</html>

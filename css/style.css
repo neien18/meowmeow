@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: #f2f2f2;
+}
+
+header {
+  background: linear-gradient(135deg, #1a1a1a, #292929);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #444;
+}
+
+/* … all other CSS from the style block … */

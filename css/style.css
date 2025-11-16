@@ -1,15 +1,43 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0d0d0d;
-  color: #f2f2f2;
 }
-
-header {
-  background: linear-gradient(135deg, #1a1a1a, #292929);
-  padding: 20px;
-  text-align: center;
-  border-bottom: 2px solid #444;
+.hero::after {
+content: '';
+position: absolute;
+top: 0; left: 0;
+width: 100%; height: 100%;
+background: rgba(0,0,0,0.6);
+}
+.hero h2 {
+position: relative;
+font-size: 2.2rem;
+margin-bottom: 10px;
+}
+.container {
+padding: 40px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+gap: 20px;
+}
+.card {
+background: #1e1e1e;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px #000;
+transition: 0.25s;
+}
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 0 14px #222;
+}
+.card h3 {
+margin-top: 0;
+}
+footer {
+text-align: center;
+padding: 20px;
+margin-top: 40px;
+background: #111;
+border-top: 2px solid #333;
 }
 
 /* … all other CSS from the style block … */
